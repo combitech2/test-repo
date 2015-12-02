@@ -1,0 +1,305 @@
+/*effekter på body som. font,backgrundsfärg, hur färger på backgrunden ska blandas, vilka färger osv.*/
+body{
+ height: 100%;
+background:
+linear-gradient(0deg, 
+rgba(40,7,0,1),
+rgba(184,20,7,0.8),
+rgba(40,7,0,1));
+background-attachment: fixed;
+}
+/*meny rutorna hamnar irad*/
+#meny1 li{
+	 display:inherit;
+
+}
+/* gör rutor runt om meny och ger egenskaper som färg textfärg,storlek på texten,
+backgrundsfärg på rutorna, hur många grader ska rutornas kant vikas osv.   */
+#meny1 ul a{
+	float: left;
+	text-decoration: none;
+	background: rgba(0,0,0,0.6);	
+	padding:8px; 
+	color: white;
+	margin-left:20px; 
+	margin-top:-8px; 
+	font-size:30px; 
+	border-radius:5px;
+}
+/*  större meny ruta   */
+#meny1 ul{
+	padding-left:5.6em;
+	float: left;
+	font: 140% Arial, Verdana, sans-serif;
+	width: 88%;	
+}
+/*vad ska hända när ni har pekar på en meny rutan som byta backgrund och textfärg*/
+#meny1 a:hover{
+	background: rgba(255,255,255,0.65);
+	text-decoration: none;
+	color: black;	
+}
+
+
+/* boxen/ramen som är runt om meny knapparna på varje sida längs upp,bestämmer rutansstrolek, placering, backgrundsbild,
+vikning på boxens kanterm skugga på rutan osv.*/
+
+#box1 {
+width: 1500px;
+height: 90px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+background-image:url("test1.jpg"); 
+	  	background-repeat:no-repeat ;
+	  	background-size:116%;
+border-radius: 30px;
+box-shadow: 
+inset 4px 4px 4px rgba(500,500,500, 0.8), 
+inset -4px -4px 4px rgba(0,0,0,0.6), 
+5px 5px 10px 5px rgba(0,0,0,0.4);
+}
+/* boxen/ramen som är innehåller länkade bilder på varje sida längs ner,bestämmer rutansstrolek, placering, backgrundsbild,
+vikning på boxens kanterm skugga på rutan */
+#box3{
+ position: absolute;
+   top:790px;
+    right: 10px;
+    left: -5px;
+width: 1500px;
+height:150px;
+margin-left:auto; 
+margin-right:auto;
+background-color: black;
+
+border-radius: 40px;
+box-shadow:
+inset 4px 4px 4px rgba(500,500,500,0.2), 
+inset -2px -2px 2px rgba(500,500,500,0.2), 
+5px 5px 10px 5px rgba(0,0,0,0.4);
+}
+
+
+/* scrollbara boxen som innehåller det mesta av sidans innehåll, den är placerad mitt i sidan mellan box1 och box3,
+bestämmer rutansstrolek, placering, backgrundsbild,vikning på boxens kanterm skugga på rutan, text färg, text storlek , stil osv.*/
+.scrollbox {
+width: 1460px;
+height:580px;
+
+ position: relative;
+   top: 20px;
+    right: 90px;
+    left: -5px;
+
+color: #FFB606;
+padding: 10px;
+margin-left: auto;
+margin-right:auto;
+background-color: black;
+border-radius: 30px;
+box-shadow:  
+inset -2px -2px 2px rgba(500,500,500,0.3),
+inset 2px 2px 2px rgba(500,500,500,0.2), 
+5px 5px 10px 5px rgba(0,0,0,0.4);
+
+font-style:italic;
+	font-size:14px; 
+	border: 10px solid black; 
+	overflow: auto;
+}
+/*hanterar valideringslänkarnas placering längst ner på varje sida*/
+#validator {
+	position: absolute;
+   top:1000px;
+    right: 90px;
+    left: 320px;
+}
+/* p classnes storlek, textfärg,textstorlek och padding*/
+.p1{
+	width: 800px;
+	font-size: 30px;
+	color:#FFB606;
+	padding: 20px;
+	padding-top: 5px;
+}
+/* divens storlek, textfärg,textstorlek och padding*/
+#p1 {
+	width: 800px;
+	font-size: 30px;
+	color:#FFB606;
+	padding: 20px;
+	padding-top: 5px;
+}
+/* divens storlek, textfärg,textstorlek och padding*/
+#p2 {
+	width: 800px;
+	font-size: 30px;
+	color:white;
+	padding: 20px;
+	padding-top: 5px;
+}
+/* divens storlek, textfärg,textstorlek och padding*/
+#p3{
+	width: 1400px;
+	text-align: center;
+	font-size: 30px;
+	color:#FFB606;
+	padding: 5px;
+	padding-top: 15px;
+
+}
+/* divens storlek, textfärg,textstorlek och padding*/
+#p4 {
+	width: 800px;
+	font-size: 28px;
+	color:#FFB606;
+	padding: 20px;
+	padding-top: 5px;
+	font-style:normal; 
+}
+/* hur header innehållet ska ändras. textstorlek, färgm skugga osv. */
+h1{
+padding-left:20px;
+padding-top: 10px; 
+	text-shadow: 4px 5px 3px rgba(255,7,54, 0.5);
+	font-size: 40px;
+	color: white;
+}
+/* hur länkar ska se ut */
+a:link{
+	text-decoration: underline;
+	color: #FFB606;
+	font-size:30px;
+	font-style: normal;}
+a:visited{
+color: #908978;
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#img1highland{
+	position:absolute;
+	top: 50px;
+	right: 40px;
+border-radius:10px; 
+}
+/* den valde bildens placering och effekterna på kanterna*/
+#img2highland{
+	position:absolute;
+	top: 400px;
+	right:10px;
+border-radius:10px; 
+}
+/* den valde bildens placering och effekterna på kanterna*/
+#img3highland{
+	position:absolute;
+	top: 1000px;
+	right:10px;
+border-radius:10px; 
+}
+/* den valde bildens placering och effekterna på kanterna*/
+#img1islay{
+	position:absolute;
+	top: 300px;
+	right:10px;
+border-radius:10px; 
+}
+/* den valde bildens placering och effekterna på kanterna*/
+#img1lowlands{
+position:absolute;
+	top: 420px;
+	right:10px;
+border-radius:10px;
+}
+/* den valde bildens placering och effekterna på kanterna*/
+#img1Campbeltown{
+	position:absolute;
+	top: 180px;
+	right:10px;
+border-radius:10px;
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#img1start{
+	position:absolute;
+	top: 4px;
+	right: 2px;
+border-radius:10px; 
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#r3start{
+	position:absolute;
+	top: 4px;
+	left:80px; 
+border-radius:10px;
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#r3highlands{
+	position:absolute;
+	top: 4px;
+	left: 340px;
+border-radius:10px;
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#r3highland{
+	position:absolute;
+	top: 4px;
+	left: 590px;
+border-radius:10px;
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#r3lowlands{
+	position:absolute;
+	top: 4px;
+	right: 580px;
+border-radius:10px;
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#r3islay{
+	position:absolute;
+	top: 4px;
+	right: 340px;
+border-radius:10px;
+}
+
+/* den valde bildens placering och effekterna på kanterna*/
+#r3campbeltown{
+	position:absolute;
+	top: 4px;
+	right: 130px;
+border-radius:10px;
+}
+/* palcering på textruta,namn ruta och E-mail på kontaktsidan*/
+form {
+	color:white; 
+	position: absolute;
+	top: 10px;
+	right:50px; 
+}
+/*kanter på textrytan ska vikas med 10pixlar, textrutan på kontakt sidan där man skriva sitt meddelande */
+textarea{
+	border-radius:10px;
+}
+
+/*kanter på namn och E-mail rutan ska vikas med 10pixlar, namn ochE-mail rutan finns på kontakt sidan där matar in sina info */
+input{
+	border-radius:10px;
+}
+/* varje video ska ha 40 pixlar padding på undersidan*/
+iframe{
+	padding-bottom: 40px;
+	
+}
+/* betämmer va videon ska  placeras*/
+#video{
+	width: 800px;
+	position: absolute;
+	top:140px;
+	right:auto;
+	left: 400px;
+	padding-bottom: 60px;
+}
