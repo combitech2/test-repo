@@ -1,0 +1,12 @@
+/.vagrant
+/vendor
+/public/js
+/public/css
+/public/images
+/storage/logs
+/storage/framework/cache
+/node_modules
+/resources/assets/js/dist
+.env
+Homestead.yaml
+.DS_Store

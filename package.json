@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "autolinker": "^0.22.0",
+    "bootstrap-sass": "^3.3.5",
+    "gulp": "^3.8.8",
+    "gulp-notify": "^2.2.0",
+    "jquery": "^1.0",
+    "laravel-elixir": "^3.0.0",
+    "normalize.css": "^3.0.3",
+    "vue": "^1.0.8"
+  }
+}

@@ -1,0 +1,119 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+html, body {
+	height: 100%;
+}
+
+nav, .navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	box-shadow: 0px 1px 3px #333;
+	z-index: 2;
+}
+
+#map-canvas {
+	position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 51px;
+    z-index: 1;
+}
+
+#tweet {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 350px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px #999;
+    z-index: 2;
+    padding: 15px;
+
+    .tweet-author {
+        font-weight: bold;
+    }
+
+    .tweet-time {
+        font-style: italic;
+        float: right;
+    }
+
+    .tweet-msg {
+        margin-top: 15px;
+    }
+}
+
+#event-list {
+    position: absolute;
+    right: 10px;
+    top: 51px + 15px;
+    bottom: 15px;
+    width: 350px;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px #999;
+    z-index: 2;
+    overflow-y: scroll;
+
+    .close-events {
+        position: absolute;
+        background-color: #FF2E3F;
+        width: 28px;
+        height: 24px;
+        line-height: 24px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        text-align: center;
+        color: #FFF;
+        border-top-right-radius: 3px;
+    }
+
+    .top {
+        background-color: #31A6FF;
+        padding: 15px 15px;
+        margin: 0;
+        color: #FFF;
+        box-shadow: 0 1px 3px #AAA;
+
+        h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .event-row {
+        cursor: pointer;
+    }
+
+    .tweet, .event-row {
+        border-bottom: 1px solid #EEE;
+        padding: 15px;
+
+        .event-name {
+            display: block;
+            font-weight: bold;
+        }
+
+        .event-description {
+            display: block;
+        }
+
+        .author {
+            display: block;
+        }
+
+        &:nth-child(odd) {
+            background-color: #F1F1F1;
+        }
+    }
+}
